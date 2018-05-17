@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\socket-chat-ui",
+    "\\client\\socket-chat-ui\\src",
+    "\\client\\socket-chat-ui\\src\\app",
+    "\\client\\socket-chat-ui\\src\\app\\chat-input",
+    "\\client\\socket-chat-ui\\src\\app\\services",
+    "\\server",
+    "\\shared",
+    "\\shared\\chat"
+  ],
+  "SelectedNode": "\\client\\socket-chat-ui\\src\\app\\services\\chat.service.ts",
+  "PreviewInSolutionExplorer": false
+}

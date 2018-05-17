@@ -1,0 +1,9 @@
+<div class="col-xs-2">
+  <p><strong>Currently in</strong> #{{channel}}</p>
+  <ul>
+    <li *ngFor="let channel of channels">
+      <span *ngIf="!isCurrentChannel(channel)">#<a href="/channel/{{channel}}" (click)="joinChannel(channel)">{{channel}}</a></span>
+      <span *ngIf="isCurrentChannel(channel)">#{{channel}}</span>
+    </li>
+  </ul>
+</div>

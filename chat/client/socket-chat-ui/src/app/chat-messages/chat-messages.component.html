@@ -1,0 +1,24 @@
+<div>
+  <div *ngIf="usersJoined.length">
+    <div *ngFor="let user of usersJoined" class="alert alert-success" role="alert">
+      <a href="#" class="alert-link"><strong>{{user.user}}</strong> joined...</a>
+    </div>
+  </div>
+  <div *ngIf="usersLeft.length">
+    <div *ngFor="let user of usersLeft" class="alert alert-danger" role="alert">
+      <a href="#" class="alert-link"><strong>{{user.user}}</strong> left...</a>
+    </div>
+  </div>
+  <div *ngIf="usersTyping.length">
+    <div *ngFor="let user of usersTyping" class="alert alert-info" role="alert">
+      <a href="#" class="alert-link"><strong>{{user.user}}</strong> is typing a message...</a>
+    </div>
+  </div>
+   <div class="">
+      <div class="chat-box-left">
+        <p *ngFor="let message of messages">
+          <strong >{{message.user}}:</strong> {{message.message}}
+         </p>
+      </div>
+    </div>
+</div>
